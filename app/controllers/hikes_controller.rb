@@ -1,4 +1,4 @@
-class HikesController < ApplicationController
+class HikesController <  OpenReadController
   before_action :set_hike, only: %i[update destroy]
 
   # GET /hikes
@@ -10,7 +10,7 @@ class HikesController < ApplicationController
 
   # GET /hikes/1
   def show
-    render json: Hike.find(params[:id])
+    render json: @hikes
   end
 
   # POST /hikes
@@ -43,7 +43,7 @@ class HikesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_hike
-      @hike = Hike.find(params[:id])
+      @hike = current_user.hikes.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
