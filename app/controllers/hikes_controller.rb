@@ -10,7 +10,8 @@ class HikesController <  OpenReadController
 
   # GET /hikes/1
   def show
-    render json: @hikes
+    @hike = Hike.find(params[:id])
+    render json: @hike
   end
 
   # POST /hikes

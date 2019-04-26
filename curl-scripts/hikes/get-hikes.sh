@@ -8,7 +8,7 @@ curl "http://localhost:4741/hikes" \
   --data '{
     "hike": {
       "location": "'"${LOCATION}"'",
-      "trail_name": "'"${TRAIL-NAME}"'",
+      "trail_name": "'"${TRAIL_NAME}"'",
       "distance_miles": "'"${DISTANCE_MILES}"'",
       "date": "'"${DATE}"'"
     }
