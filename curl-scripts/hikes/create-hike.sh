@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl "https://explore-hiking.herokuapp.com" \
+curl "http://localhost:4741/hikes" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
