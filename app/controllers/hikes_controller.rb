@@ -1,5 +1,5 @@
-class HikesController <  OpenReadController
-  before_action :set_hike, only: %i[update destroy]
+class HikesController <  ProtectedController
+  before_action :set_hike, only: %i[show update destroy]
 
   # GET /hikes
   def index
