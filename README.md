@@ -7,13 +7,10 @@ edit or deleate action.
 
 ## Technologies Used
 
-1. HTML
-1. BOOTSTRAP
-1. HANDLEBARS
-1. JAVASCRIPT
-1. SASS
-1. RUBY/RAILS
-1. JQUERY
+1. RUBY
+1. RAILS
+1. PostgreSQL
+1. CURLSCRIPTS
 
 ## Short Comings
 
