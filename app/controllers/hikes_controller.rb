@@ -3,7 +3,7 @@ class HikesController <  ProtectedController
 
   # GET /hikes
   def index
-    @hikes = Hike.all
+    @hikes = current_user.hikes.all
 
     render json: @hikes
   end
